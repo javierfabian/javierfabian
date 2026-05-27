@@ -3,152 +3,239 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> BRENDA WEB </title>
-    <link rel="shortcut icon" href="img/favicon-16x16.png" type="image/x-icon">
-    <link rel="stylessheet" href="css\estilos.css">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Tradición argentina con diseño moderno y experiencia premium">
+
+    <meta name="keywords"
+          content="Argentina, tradición, productos argentinos">
+
+    <meta name="author"
+          content="Brenda Web">
+
+    <title>Brenda Web | Tradición Argentina</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
+          rel="stylesheet">
 </head>
+
 <body>
-    <header>
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Acerca de</a>
-            <a href="#">Portafolio</a>
-            <a href="#">Productos</a>
-            <a href="#">Contacto</a>
+
+    <!-- BOTON DARK MODE -->
+    <button class="dark-btn" id="darkBtn">
+        🌙
+    </button>
+
+    <!-- HEADER -->
+    <header class="hero">
+
+        <!-- NAV -->
+        <nav class="nav container">
+
+            <h2 class="logo">BRENDA WEB</h2>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Portafolio</a></li>
+                <li><a href="#">Clientes</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+
+            <!-- HAMBURGER -->
+            <div class="hamburger" id="hamburger">
+                ☰
+            </div>
+
         </nav>
-        <section class="textos-header">
-            <h1>¡¡¡Síentete bien argentino!!!</h1>
-            <h2>Todo la tradicíon en tu página amiga</h2>
+
+        <!-- HERO CONTENT -->
+        <section class="hero-content container">
+
+            <h1>
+                ¡Siéntete bien argentino!
+            </h1>
+
+            <p>
+                Tradición, cultura y pasión en una experiencia única.
+            </p>
+
+            <a href="#" class="btn">
+                Explorar
+            </a>
+
         </section>
-        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
-                style="height: 100%; width: 100%;">
-                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: rgb(143, 65, 196);"></path>
-            </svg></div>
+
     </header>
+
+    <!-- MAIN -->
     <main>
-        <section class="contenedor sobre-nosotros">
-            <h2 class="titulo">nuestro porducto</h2>
-            <div class="contenedor-sobre-nosotros">
-                <img src="img/tradicion.jpg" alt="" class="imagen-about-us">
-                <div class="contenido-textos">
-                    <h3><span>1</span> Los mejores productos</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Asperiores similique blanditiis ab animi voluptatum deleniti
-                        nisi tempore eius modi dolorem.</p>
-                    <h3><span>2</span> Los mejores productos</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        Asperiores similique blanditiis ab animi voluptatum deleniti
-                        nisi tempore eius modi dolorem.</p>
-                </div>
+
+        <!-- SOBRE NOSOTROS -->
+        <section class="about container">
+
+            <div class="about-img">
+                <img src="img/tradicion.jpg"
+                     alt="Tradición Argentina"
+                     loading="lazy">
             </div>
+
+            <div class="about-text">
+
+                <h2>Nuestra Tradición</h2>
+
+                <p>
+                    Conservamos la esencia de la cultura argentina
+                    combinando tradición y diseño moderno.
+                </p>
+
+                <p>
+                    Productos auténticos, calidad premium y una experiencia única.
+                </p>
+
+            </div>
+
         </section>
-        <section class="portafolio">
-            <div class="contenedor">
-                <h2 class="titulo">portafolio</h2>
-                <div class="galeria-port">
-                    <div class="imagen-port">
-                        <img src="img/tenta5.jpg" alt="">
-                        <div class="hover-galeria">
-                            <img src="img/icons8-exactitud.gif" alt="">
-                            <p>nuestro trabajo</p>
+
+        <!-- PORTAFOLIO -->
+        <section class="portfolio">
+
+            <div class="container">
+
+                <h2 class="section-title">
+                    Portafolio
+                </h2>
+
+                <div class="gallery">
+
+                    <article class="card">
+                        <img src="img/tenta1.jpg"
+                             alt="Trabajo 1"
+                             loading="lazy">
+
+                        <div class="overlay">
+                            <h3>Trabajo 1</h3>
                         </div>
-                    </div>
-                    <img src="img/tenta1.jpg" alt="">
-                    <div class="hover-galeria">
-                        <img src="img/icons8-exactitud.gif" alt="">
-                        <p>nuestro trabajo</p>
-                    </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/tenta2.jpg"
+                             alt="Trabajo 2"
+                             loading="lazy">
+
+                        <div class="overlay">
+                            <h3>Trabajo 2</h3>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/tenta3.jpg"
+                             alt="Trabajo 3"
+                             loading="lazy">
+
+                        <div class="overlay">
+                            <h3>Trabajo 3</h3>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <img src="img/tenta4.jpg"
+                             alt="Trabajo 4"
+                             loading="lazy">
+
+                        <div class="overlay">
+                            <h3>Trabajo 4</h3>
+                        </div>
+                    </article>
+
                 </div>
-                <img src="img/tenta2.jpg" alt="">
-                <div class="hover-galeria">
-                    <img src="img/icons8-exactitud.gif" alt="">
-                    <p>nuestro trabajo</p>
-                </div>
-            </div>
-            <img src="img/tenta3.jpg" alt="">
-            <div class="hover-galeria">
-                <img src="img/icons8-exactitud.gif" alt="">
-                <p>nuestro trabajo</p>
-            </div>
-            </div>
-            <img src="img/tenta4.jpg" alt="">
-            <div class="hover-galeria">
-                <img src="img/icons8-exactitud.gif" alt="">
-                <p>nuestro trabajo</p>
-            </div>
-            </div>
-            </div>
-            </div>
-        </section>
-        <section class="clientes contenedor">
-            <h2 class="titulo">que dicen nuestros clientes</h2>
-            <div class="cards">
-                <div class="card">
-                    <img src="img/gaucha2.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>name</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Nemo ducimus voluptate itaque atque nisi suscipit eligendi
-                            repellat optio quidem alias?</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="img/gauchita.jpg" alt="">
-                    <div class="contenido-texto-card">
-                        <h4>name</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Nemo ducimus voluptate itaque atque nisi suscipit eligendi
-                            repellat optio quidem alias?</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="about-service">
-            <div class="contenedor">
-                <h2 class="titulo">nuestros marca</h2>
-                <div class="producto-cont">
-                    <div class="producto-ind">
-                        <img src="img/estabueno.jpg" alt="">
-                        <h3>name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, laboriosam.</p>
-                    </div>
-                    <div class="producto-ind">
-                        <img src="img/lindo2.jpg" alt="">
-                        <h3>name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, laboriosam.</p>
-                    </div>
-                    <div class="producto-ind">
-                        <img src="img/lindo.jpg" alt="">
-                        <h3>name</h3>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi, laboriosam.</p>
-                    </div>
-                </div>
+
             </div>
 
         </section>
+
+        <!-- CLIENTES -->
+        <section class="clients container">
+
+            <h2 class="section-title">
+                Nuestros Clientes
+            </h2>
+
+            <div class="clients-grid">
+
+                <article class="client-card">
+
+                    <img src="img/gaucha2.jpg"
+                         alt="Cliente">
+
+                    <h3>María</h3>
+
+                    <p>
+                        Excelente atención y calidad premium.
+                    </p>
+
+                </article>
+
+                <article class="client-card">
+
+                    <img src="img/gauchita.jpg"
+                         alt="Cliente">
+
+                    <h3>Lucía</h3>
+
+                    <p>
+                        Una experiencia auténtica y hermosa.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
     </main>
-    <footer>
-        <div class="contenedor-footer">
-            <div class="content-foo">
-                <h4>celular:</h4>
-                <p>23498769383</p>
-            </div>
-            <div class="contenedor-footer">
-                <div class="content-foo">
-                    <h4>Email:</h4>
-                    <p>23498769383</p>
-                </div>
-                <div class="contenedor-footer">
-                    <div class="content-foo">
-                        <h4>direccion: </h4>
-                        <p>23498769383</p>
-                    </div>
-                </div>
-                <h2 class="titulo-final">&copy; javitecnologyadvancer | Reinaldo F Javier</h2>
-    </footer>
-</body>
 
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="container footer-content">
+
+            <div>
+                <h3>Contacto</h3>
+                <p>+54 9 1111 1111</p>
+            </div>
+
+            <div>
+                <h3>Email</h3>
+                <p>info@brendaweb.com</p>
+            </div>
+
+            <div>
+                <h3>Ubicación</h3>
+                <p>Argentina</p>
+            </div>
+
+        </div>
+
+        <p class="copy">
+            © Brenda Web - Todos los derechos reservados
+        </p>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+
+</body>
 </html>
