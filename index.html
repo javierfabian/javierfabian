@@ -1,241 +1,102 @@
 <!DOCTYPE html>
-<html lang="es">
-
+<html lang="es-AR">
 <head>
-    <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Tradición argentina con diseño moderno y experiencia premium">
-
-    <meta name="keywords"
-          content="Argentina, tradición, productos argentinos">
-
-    <meta name="author"
-          content="Brenda Web">
-
-    <title>Brenda Web | Tradición Argentina</title>
-
-    <link rel="stylesheet" href="css/estilos.css">
-
-    <!-- GOOGLE FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap"
-          rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brenda Web | Cultura criolla del Nordeste argentino</title>
+  <meta name="description" content="Mate, tereré, chamamé y raíz guaraní. Cultura criolla del Nordeste argentino con diseño moderno.">
+  <meta name="author" content="Brenda Web">
+  <meta name="theme-color" content="#1F3B2D">
+  <meta property="og:title" content="Brenda Web | Cultura criolla del Nordeste">
+  <meta property="og:description" content="Mate, tereré, chamamé y raíz guaraní.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="img/tradicion.jpg">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧉</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600&family=Young+Serif&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
-
 <body>
+  <a class="skip" href="#contenido">Ir al contenido</a>
 
-    <!-- BOTON DARK MODE -->
-    <button class="dark-btn" id="darkBtn">
-        🌙
-    </button>
+  <header class="hero" id="inicio">
+    <nav class="nav container" aria-label="Principal">
+      <a class="logo" href="#inicio">Brenda Web</a>
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menú">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#portafolio">Portafolio</a></li>
+        <li><a href="#clientes">Clientes</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+        <li><button class="theme-btn" id="themeBtn" aria-label="Cambiar a modo oscuro">🌙</button></li>
+      </ul>
+    </nav>
 
-    <!-- HEADER -->
-    <header class="hero">
+    <div class="hero-content container">
+      <h1>Cultura criolla del Nordeste, hecha para hoy.</h1>
+      <p>Mate, tereré, chamamé y raíz guaraní: la tradición de Misiones, Corrientes, Chaco y Formosa con un diseño simple y cuidado.</p>
+      <a href="#portafolio" class="btn">Ver portafolio</a>
+    </div>
+  </header>
 
-        <!-- NAV -->
-        <nav class="nav container">
+  <main id="contenido">
+    <section class="about container" id="nosotros">
+      <img src="img/tradicion.jpg" alt="Tradición criolla del Nordeste argentino" loading="lazy" width="800" height="1000">
+      <div>
+        <h2>Nuestra tradición</h2>
+        <p>Nacimos entre el río y la selva, donde se comparte la ronda de mate antes que cualquier otra cosa. Cuidamos esa herencia criolla y guaraní y la llevamos a productos y experiencias de hoy.</p>
+        <ul class="pillars">
+          <li><strong>Mate y tereré</strong> La ronda como forma de encuentro.</li>
+          <li><strong>Chamamé</strong> La música que late en el litoral.</li>
+          <li><strong>Raíz guaraní</strong> Lengua, nombres y saberes del territorio.</li>
+          <li><strong>Mesa criolla</strong> Chipá, mbejú y asado, siempre compartidos.</li>
+        </ul>
+      </div>
+    </section>
 
-            <h2 class="logo">BRENDA WEB</h2>
-
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Portafolio</a></li>
-                <li><a href="#">Clientes</a></li>
-                <li><a href="#">Contacto</a></li>
-            </ul>
-
-            <!-- HAMBURGER -->
-            <div class="hamburger" id="hamburger">
-                ☰
-            </div>
-
-        </nav>
-
-        <!-- HERO CONTENT -->
-        <section class="hero-content container">
-
-            <h1>
-                ¡Siéntete bien argentino!
-            </h1>
-
-            <p>
-                Tradición, cultura y pasión en una experiencia única.
-            </p>
-
-            <a href="#" class="btn">
-                Explorar
-            </a>
-
-        </section>
-
-    </header>
-
-    <!-- MAIN -->
-    <main>
-
-        <!-- SOBRE NOSOTROS -->
-        <section class="about container">
-
-            <div class="about-img">
-                <img src="img/tradicion.jpg"
-                     alt="Tradición Argentina"
-                     loading="lazy">
-            </div>
-
-            <div class="about-text">
-
-                <h2>Nuestra Tradición</h2>
-
-                <p>
-                    Conservamos la esencia de la cultura argentina
-                    combinando tradición y diseño moderno.
-                </p>
-
-                <p>
-                    Productos auténticos, calidad premium y una experiencia única.
-                </p>
-
-            </div>
-
-        </section>
-
-        <!-- PORTAFOLIO -->
-        <section class="portfolio">
-
-            <div class="container">
-
-                <h2 class="section-title">
-                    Portafolio
-                </h2>
-
-                <div class="gallery">
-
-                    <article class="card">
-                        <img src="img/tenta1.jpg"
-                             alt="Trabajo 1"
-                             loading="lazy">
-
-                        <div class="overlay">
-                            <h3>Trabajo 1</h3>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <img src="img/tenta2.jpg"
-                             alt="Trabajo 2"
-                             loading="lazy">
-
-                        <div class="overlay">
-                            <h3>Trabajo 2</h3>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <img src="img/tenta3.jpg"
-                             alt="Trabajo 3"
-                             loading="lazy">
-
-                        <div class="overlay">
-                            <h3>Trabajo 3</h3>
-                        </div>
-                    </article>
-
-                    <article class="card">
-                        <img src="img/tenta4.jpg"
-                             alt="Trabajo 4"
-                             loading="lazy">
-
-                        <div class="overlay">
-                            <h3>Trabajo 4</h3>
-                        </div>
-                    </article>
-
-                </div>
-
-            </div>
-
-        </section>
-
-        <!-- CLIENTES -->
-        <section class="clients container">
-
-            <h2 class="section-title">
-                Nuestros Clientes
-            </h2>
-
-            <div class="clients-grid">
-
-                <article class="client-card">
-
-                    <img src="img/gaucha2.jpg"
-                         alt="Cliente">
-
-                    <h3>María</h3>
-
-                    <p>
-                        Excelente atención y calidad premium.
-                    </p>
-
-                </article>
-
-                <article class="client-card">
-
-                    <img src="img/gauchita.jpg"
-                         alt="Cliente">
-
-                    <h3>Lucía</h3>
-
-                    <p>
-                        Una experiencia auténtica y hermosa.
-                    </p>
-
-                </article>
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <!-- FOOTER -->
-    <footer>
-
-        <div class="container footer-content">
-
-            <div>
-                <h3>Contacto</h3>
-                <p>+54 9 1111 1111</p>
-            </div>
-
-            <div>
-                <h3>Email</h3>
-                <p>info@brendaweb.com</p>
-            </div>
-
-            <div>
-                <h3>Ubicación</h3>
-                <p>Argentina</p>
-            </div>
-
+    <section class="portfolio" id="portafolio">
+      <div class="container">
+        <h2>Portafolio</h2>
+        <div class="gallery">
+          <figure><img src="img/tenta1.jpg" alt="Trabajo 1" loading="lazy" width="600" height="750"><figcaption>Trabajo 1</figcaption></figure>
+          <figure><img src="img/tenta2.jpg" alt="Trabajo 2" loading="lazy" width="600" height="750"><figcaption>Trabajo 2</figcaption></figure>
+          <figure><img src="img/tenta3.jpg" alt="Trabajo 3" loading="lazy" width="600" height="750"><figcaption>Trabajo 3</figcaption></figure>
+          <figure><img src="img/tenta4.jpg" alt="Trabajo 4" loading="lazy" width="600" height="750"><figcaption>Trabajo 4</figcaption></figure>
         </div>
+      </div>
+    </section>
 
-        <p class="copy">
-            © Brenda Web - Todos los derechos reservados
-        </p>
+    <section class="clients container" id="clientes">
+      <h2>Lo que dicen nuestros clientes</h2>
+      <div class="clients-grid">
+        <figure class="quote">
+          <blockquote>Excelente atención y calidad premium.</blockquote>
+          <figcaption><img src="img/gaucha2.jpg" alt="" width="56" height="56" loading="lazy">María</figcaption>
+        </figure>
+        <figure class="quote">
+          <blockquote>Una experiencia auténtica y hermosa.</blockquote>
+          <figcaption><img src="img/gauchita.jpg" alt="" width="56" height="56" loading="lazy">Lucía</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
 
-    </footer>
+  <footer id="contacto">
+    <div class="container footer-content">
+      <div>
+        <h2>Contacto</h2>
+        <p>Escribinos y armamos algo juntos.</p>
+      </div>
+      <ul>
+        <li><a href="tel:+5491111111111">+54 9 1111 1111</a></li>
+        <li><a href="mailto:info@brendaweb.com">info@brendaweb.com</a></li>
+        <li>Nordeste argentino</li>
+      </ul>
+    </div>
+    <p class="copy">© <span id="year">2026</span> Brenda Web. Todos los derechos reservados.</p>
+  </footer>
 
-    <script src="js/app.js"></script>
-
+  <script src="js/app.js"></script>
 </body>
 </html>
